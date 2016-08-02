@@ -4,7 +4,7 @@
 To gain an understanding of File I/O.
 
 ### Part 1
-1. Write a program `wordcount.c` that takes in a text file, `text.txt` and prints to screen the number of words in the file.  You may consider any non-whitespace characters surrounded by whitespace to be a word.  
+1. Write a program `wordcount.c` that takes in a text file, `text.txt` and prints to screen the number of words in the file.  You may consider any non-whitespace characters surrounded by whitespace to be a word.  The end of the file will be `"########"`.  Submit only your wordcount.c file.
 2. Submit your exercise from class.  Include your program (e.g. `fileio.c`) and your input file (e.g. `input.txt`).
 
 
