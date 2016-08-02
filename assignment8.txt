@@ -1,0 +1,16 @@
+1. printf is more convenient, it is more useful for basic printng, however, fprintf is more modifiable (totally spelled that wrong), its kinda like the whole mac vs windows (or linux) - yes mac [printf] is easier to use for basic thing but windows [fprintf] is easier to customize and has a wider range of uses.
+
+	for the record printf is just fprintf with the final statement being stdout.
+
+
+2. The difference between "rw" and "wr" is the order in which things are executed. In "rw" the file is read and then can be written to while in "wr" you are writing to a file (erasing what might have been there) and then reading what you just wrote.
+
+	The difference between "w" and "a" is "w" rewrites the file and "a" appends to it. You can use "w" when you realize the file you have just written is garbadge and should be scraped and "a" can be used before this realization to add to a file
+
+3. gets() is dangerous because you have to know exactly how many characters the computer will be reading inorder to change the size fo your buffer to fit. 
+
+	This is fun because if you dont know this gets will continue reading until an error so basically it will overflow the bounds of the buffer - the first internet worm used the issue with gets() to really mess with people
+
+		use fgets() instead.
+
+4.fp points to where ever the trial file is. it points to the memory location of that file.
