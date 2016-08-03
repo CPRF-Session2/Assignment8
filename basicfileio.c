@@ -30,6 +30,7 @@ int main () {
 				sq5=num*num;
 				break;
 		}
+		// how does the computer know that I want the NEXT string and not just give me the first string in the file again
 		fgets(inputfilearray,100,inputfile);
 	}
 	fclose(inputfile);
