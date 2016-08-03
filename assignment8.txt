@@ -1,0 +1,11 @@
+Mariposa Lee
+
+1. printf() is a formatted print that writes variables to a default output stream, while fprintf prints to a specific output file. fprintf syntax requires a file variable, formatted text, and variable while printf just needs formatted text and variable. printf() is the same as fprintf(stdout,__), since printf writes to a standard output stream. 
+
+2. Opening a file in "rw" requires the file to be already in existance, and reads the file then writes to it. Opening a file in "wr" creates a new file (or just overwrites an existing one) and reads the contents. 
+	Opening a file in "w" writes to the file, while opening a file in "a" adds to an existing one without overwriting it. 
+	As for examples, "rw" could be used when you're writing to a file already in existence after evaluating its contents (e.g printing). "wr" could be used when you want to create a new file, say, for a set of userinputs, then read the userinputs. "w" can be used when you want to overwrite a file or just create a new one. "a" can be used when you want to edit an existing file or add to it every single time it is hit in a loop, for example.
+
+3. The gets() function should be avoided because without a proper buffer size declared, it will end up in an endless loop of reading and can crash a program. The gets() function doesn't know how big the buffer is without the user telling it firsthand.
+
+4. fp points to the memory address of "trial". 
