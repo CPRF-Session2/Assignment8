@@ -1,0 +1,14 @@
+Madeleine Charity 
+
+1.fprintf has format fprintf(file, "text", arg); while printf has format printf("text", arg);. fprintf requires a location to print the text to while printf does not. This is because fprintf printe to an output file, while printf prints when the program is run. They are similar because they both print texts, so they require text and arguments, but they print to different places. 
+
+2. wr clears the file before it is read, while rw does not. "w" mode in fopen clears the file to write in it, while "a" mode just adds to the text that is already there. 
+	wr mode-	when you want to open a clear file to read and write from
+	rw mode- 	when you want to open a file to read and write from, but not erase whatever is already there
+	w mode- 	when you want to open a clear file to write in 
+	a mode- 	when you want to open a file and add more text 
+
+3. gets does not know how long the string is, so it does not know how much memory it needs. This could lead to it using memory that it isn't allowed to, and could lead to a crash. 
+
+4. fp points to the file "trial". fp was declared as a FILE pointer, and then assigned to the file trial by fopen. (trial doesn't have an extension however, but I think fopen still works)
+
