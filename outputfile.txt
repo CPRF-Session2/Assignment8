@@ -1,0 +1,6 @@
+Average: 117.000000
+Square of number 1: 15129.000000
+Square of number 2: 441.000000
+Square of number 3: 97344.000000
+Square of number 4: 12769.000000
+Square of number 5: 289.000000

@@ -1,0 +1,24 @@
+Jinoo Hong
+
+1. Compare and contrast fprintf() and printf(). Be thorough - include details on input, output, and details of the functions.
+printf() only allows for printing to the screen whereas fprintf() can print to files and other output means by using pointers. printf("message", arg1, arg2...); whereas fprintf(FILE *ptr, "message", arg1, arg2...);
+
+2. What, if anything, is the difference between opening a file in “rw” mode and opening it in “wr” mode?  What is the difference between opening a file in “w” mode and opening it in “a” mode?  Give an example of when you would use each.
+"rw" reads and then overwrites that file whereas "wr" writes and then reads what you have written. "a" is append and this means that you are editing the file and not completely overwriting it. 
+
+3. Why should using the function `gets()` be avoided?
+gets() will input until end of line or end of file is found. So if there if the user inputs more than 99 characters into a 100 sized array, then it will input into memory it should not be able to access. 
+
+4. What does `fp` point to? Explain.
+
+``` C
+#include<stdio.h>
+
+int main()
+{
+    FILE *fp;
+    fp=fopen("trial", "r");
+    return 0;
+}
+fp points to the file "trial" but the trial does not have a .txt or .c or other extention and so this might cause issues and might point to nothing.
+```
