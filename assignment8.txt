@@ -1,0 +1,11 @@
+1. Compare and contrast fprintf() and printf(). Be thorough - include details on input, output, and details of the functions. 
+	Although printf and fprintf both write text to wherever the standard ouput stream is pointing, their syntax is different, as is when you would use them. fprintf () prints to an ouput file, and its syntax is 'int fprintf (FILE *fptr). Printf is for printing a character stream of data on stdout console. Its syntax is int printf (const char* str...).
+	
+2. What, if anything, is the difference between opening a file in "rw" mode and opening it in "wr" mode? What is the difference between opening a file in "w" mode and opening it in "a" mode? Give an example of when you would use each.
+	There is no such thing as opening a file in wr mode, but when you open it in rw mode, you are replacing a word with something else in your file. When you open a file in 'w' mode, you are opening a file to write in it. When you open a file in 'a' mode, it means that you are appending it (adding as a supplement).
+
+3. Why should using the function gets() be avoided?
+	Because it stops when a newline character is read.
+
+4. What does fp point to? Explain.
+	The file name, or the address associated with it.	
