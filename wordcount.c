@@ -6,16 +6,17 @@ int main()
 {
 	FILE *fileVar = fopen("text.txt", "r");
 	char c;
+	int counter = 0;
 
 	while((c = fgetc(fileVar)) != '#')
 	{
 			if(c == ' ')
-				printf("\n");
-			else
-				printf("%c", c);
-	}	
-
+				counter++;
+	}
+	
 	fclose(fileVar);
+	
+	printf("%d\n",counter);
 
 	return 0;
 }
