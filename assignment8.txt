@@ -1,0 +1,19 @@
+Matthew Kellerman
+
+1.
+
+printf prints text or a formatted specified number to the standard output stream. It is equivalent to fprintf(stdout)
+
+fprintf however is much more flexible to printf and can print text or formatted specified numbers to wherever you specify. For example, you can use specify fprintf to print a file. You can also use fprintf(stderr) for error checking.
+
+2.
+rw reads the file first and then overwrites it
+
+wr overwrites the file and then reads what you wrote in the file
+
+A file in "w" mode overwrites the file with what you have written , and "a" mode adds what you have have written to what already in the file.
+
+3. 
+Using gets() should be avoided because you need to know how many characters will be read .With gets() if is very easy to make your program to access memory it shouldn't try to access.
+
+fp points to nothing since the file trial doesn't have an extension such as .c or .txt.
