@@ -7,11 +7,19 @@ int main()
 	FILE *fileVar = fopen("text.txt", "r");
 	char c;
 	int counter = 0;
+	int valid = 1;
 
+	start:	
 	while((c = fgetc(fileVar)) != '#')
 	{
-			if(c == ' ')
-				counter++;
+		if(c == ' ')
+		{
+			counter++;
+			while(c == ' ')
+			{
+				c =fgetc(fileVar);
+			}
+		}
 	}
 	
 	fclose(fileVar);
