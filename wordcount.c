@@ -19,9 +19,11 @@ char contains8(char a1[], int size1){
 /*size = length of a*/
 int numOfWords(char a[], int size){
 	int i = 0;
+	int lastWhite=-1;
 	while(i<size && isspace(a[i])==0)
 		i++;/*finds first whitespace occurrence*/
 	int count = 1;
+	lastWhite=i;/*sets last white space*/
 	if(i==size-1)
 		return count;/*returns 1 if no whitespace is found until thend of the line*/
 	if(i==0)
@@ -30,7 +32,12 @@ int numOfWords(char a[], int size){
 	while(i<size){
 		if(isspace(a[i])){
 			count++;
+			if(lastWhite==i-1){
+				if(i!=size-1)
+					count--;/*checks for double whitespace*/
+			}
 		}
+		lastWhite=i;/*sets last whitespace*/
 		i++;
 	}
 	
