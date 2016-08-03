@@ -1,4 +1,4 @@
-/*Mariposa Lee, reads input.txt, prints average and squares*/
+/*Mariposa Lee, reads input.txt, prints average and squares. A friend helped me through this in the morning.*/
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -13,7 +13,7 @@ float out[5];
 FILE *inp = fopen("input.txt", "r");
 char txt[50];
 int a;
-for(a=0; a<5; a++) {
+for(a=0; a<5; a++) {     /*Switch statement to turn inputs into valid values*/
 	switch (a) {
 		case 1:
 		out[0]=atof(txt);
@@ -30,11 +30,11 @@ for(a=0; a<5; a++) {
 		case 4:
 		out[3]=atof(txt);
 		break;} 
-	fgets(txt,50,inp); }
+	fgets(txt,50,inp); } /*Actually gets the inputs here*/
 	
 FILE *inw = fopen("output.txt", "w");
 float average;
-average=((out[0]+out[1]+out[2]+out[3])/4);
+average=((out[0]+out[1]+out[2]+out[3])/4); 
 fprintf(inw, "The average of the numbers are %.3f.\n", average);
 float q,w,e,r;
 q= out[0];
