@@ -1,0 +1,9 @@
+Ashank Kumar
+
+1. printf writes text to the ouput stream(monitor) while fprintf writes text to the output stream the programmer tell it to(a file).
+
+2. A file in "w" mode will overwrite anything in the file, while "a" will add to whatever is in the file. "rw" will first read to the file then write to it, so what ever is in the file wont be replaced. While "wr" fill overwrite whatever is in the file.
+
+3.gets() should be avoided because if the user enters more characters then expected, gets() will overwrite whats stored in other memory addresses with what was entered
+
+4.fp points to the file trial
