@@ -1,0 +1,36 @@
+/*Rebecca Hale Assignment 8 Part 2*/
+
+1. fprintf() and printf() are both functions used in C to print out given
+input.  However, they are slightly different.  fprintf() prints input
+through a specific stream (FILE) while printf() sends formatted output to
+the stdout stream.  Both are of type int, so they technically return an int
+when used.  Both printing methods can utilize format specifiers to input
+specific data types but generally they are both given string input when no
+specifiers are used.
+
+2. Opening a file in "rw" mode indicates that the computer will read from
+the file first and then erase and write over the previous text after. This 
+mode could be used in a situation in which the user wants to see what was
+previously written in the file but then wants to replace all text 
+written in the previous file. "wr" mode indicates that the computer will
+write over and delete all previous text and then read from the new text 
+provided. This mode would be useful if the user wanted to write text and
+have it immediately be displayed. Opening a file in "w" mode indicates to
+the computer to essentially delete all previous text in whatever file
+chosen and to write over whatever was previously written. This mode would
+be useful if the user wished to completely delete all previous written 
+text. The "a" mode is used to append the previous text and thus will not
+delete or write over any previous text but instead will add whatever new
+text to the file named.  This would be useful to a user who wished to 
+keep whatever text was previously written but wanted to make changes to 
+the text, for example if the user was editing an essay.
+
+3. The function gets() should be avoided because the function is not 
+passed the length of whatever array or string it is passed and thus 
+it can easily overstep array boundaries and cause errors in whatever 
+program it is being used in.
+
+4. fp points to whatever file is titled trial on the machine being used.
+The function fopen() is used which returns a FILE type and this FILE 
+pointer fp is then assigned to "point" to the trial file. 
+
