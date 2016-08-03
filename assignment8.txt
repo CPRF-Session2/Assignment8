@@ -1,0 +1,13 @@
+Can Parlar
+
+1. printf means formatted input so you do not just print a text you can format the text by adding % signs to print numbers and such. fprintf has 2 formats one to print more than a text and one to print where. Normal printf prints to the standart output but fprintf can do it anywhere.
+
+2.A.
+rw reads it first then overwrites it if there is something in it. wr directly overwrites it then reads what you've written.
+2.B. I dont know
+
+
+3.gets don't know the lenght of the input so it is dangerous for the memory, with fgets we can tell the sizeof the input and then deal with the \n later.
+
+4.It points to nothing beacuse the file trial has no extansion.
+
