@@ -1,3 +1,4 @@
+/* Count the words in a string, now with user-input! The user types in a string, which then gets outputted to output.c, where it can be evaluated and the amount of words can be counted. - Amanda Cuevas */
 #include <stdio.h>
 #include <string.h>
 

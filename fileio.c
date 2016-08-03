@@ -1,3 +1,4 @@
+/* Averages the five numbers found in the input file, and then squares each of the individual numbers. All of these values are then printed to the terminal. - Amanda Cuevas */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
