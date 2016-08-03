@@ -1,0 +1,9 @@
+Jared Wasserman
+
+1) The major difference between fprintf() and printf() is that printf() prints to the console and fprintf() can "print"/write into a file. printf() only needs the formated texted and the arguments printf("formated text",arg1...) but fprintf() needs the pointer to the FILE frpinf(filePtr,"formatted text",arg1...).
+
+2) The difference between opening in file in "rw" mode and "wr" mode is the "rw" mode allows you to first read the file and then to write to it, when "wr" mode allows you to first write to the file (which would delete any of the contents in the file) and then read it (you would be reading only what you just wrote to the file, not the original contents). The difference between "w" mode and "a" mode is that in "w" mode when you write to the file you override all previous contents of the file but in "a" mode when you write to the file you append (add to the end of the file) and keep the previous contents. You would use "w" mode if you have an empty file or want to get rid of the current contents of a file. You would use a to add to a file, when you have more information to store about user, you could add it to the end of the file (but using "a" you would not be changing already exsiting information about the user). 
+
+3) The function gets() should be avoided because it does not have a maxium length parameter so rather than truncated a input that is to long for the array, it will attempt to add it to the array and could go out of bounds which would cause errors.
+
+4) fp points to the file in the working directory that has the name "trial". At firs tht fp pointer is not pointing to anything but then when it is assigned to fopen("trial","r") it point to the "trial" file in the working directory. It is important to note that fopen() looks for an extension so the fp pointer would be pointing to a file named "trial" not a file named "trial.txt", etc.
