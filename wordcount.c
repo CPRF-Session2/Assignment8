@@ -21,7 +21,7 @@ int main()
 		if(input[i] == ' ')
 		{
 			//printf("[%d]", input[i]);
-			for(int x = 2;x<sizeof(input);x++)
+			for(int x = 1;x<sizeof(input);x++)
 			{
 				if(input[i+x] == ' ')
 				{
