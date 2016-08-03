@@ -1,0 +1,8 @@
+1. printf() prints text out to the output stream and you can format the text. 
+   fprintf() prints text to whatever output the programmer tells it to, and you can format the input and output.
+
+2. opening in "rw" reads the file first, "wr" overwrites the code and then reads it. "w' mode overwrites the code but "a" only adds to the file.
+
+3.gets() does not know the size of the input so i could overwrite other memory addresses to compensate.
+
+4. It points to nothing.
