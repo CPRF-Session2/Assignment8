@@ -1,0 +1,6 @@
+Albert Zhang
+1) printf prints to the termainal, while fprintf will print to any output stream, including another file.
+2) opening a file in "rw" mode reads it before writing, which allows you to 
+print what was in the file before editing it. "wr" writes before reading, which allows you to read what the use just input. "w" clears the file before writing in it, while "a" just appends to the end of the file.
+3)gets() should not be used because if the user enters too many characters, it will overwrite into memory that was not expected to be used.
+4)fp points the a file named trial.
