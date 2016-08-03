@@ -26,7 +26,6 @@ int main()
 				if(input[i+x] == ' ')
 				{
 					Wcounter+=1;
-					i = i+x-1;
 					break;
 				}
 								
