@@ -1,0 +1,12 @@
+Drew French
+
+1)	fprintf is used to print to a file, while printf is used to output a line of text in terminal/command prompt.
+
+2)	wr - Erase everything, write something, then read what it contains.
+	rw - Read what it contains, then erase everything & write something.
+	w - Erase everything & write something.
+	a - Add text onto the end of the file.
+
+3)	You have to know the exact space used with gets.
+
+4)	fp points to a file in the same directory called "trial".
