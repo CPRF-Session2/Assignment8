@@ -1,0 +1,13 @@
+1.) fprintf() prints out to a specified output stream
+2.) printf() prints out to the standard output stream
+
+
+1.)rw opens a file for reading and writing, and doesn't overwrite whatever is in the file, it just adds to it
+2.)wr This one opens a file and cleans the slate.
+
+
+1.)If fyou don't know how many characters the user is going to input it will just store stuff from different memory adresses
+
+
+
+1.)The file trial
