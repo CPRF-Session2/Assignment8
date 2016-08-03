@@ -10,24 +10,25 @@ int main()
 		printf("Please enter a string of words to be inputted into the text file.\n");
 		fgets(str, sizeof(str), stdin);
 		str[strlen(str) - 1] = '\0';
+/* ^^^ Gets string */
+	FILE *palabras = fopen("text.txt", "wr"); /* Opens file. */
 
-	FILE *palabras = fopen("text.txt", "wr");
+		fprintf(palabras,"%s########", str); /* Prints string to text file, and adds end of line character. */
 
-		fprintf(palabras,"%s########", str);
+	fclose(palabras); /* Closes file */
 
-	fclose(palabras);
-
-	FILE *pala = fopen("text.txt", "r");
+	FILE *pala = fopen("text.txt", "r"); /* Reopens file */
 		int count = 1;
 		while((loc = fgetc(pala)) != '#') {
 			if(loc == ' ') {
 				count++;
 			}
 		}
+		/* ^^^ Checks for whitespace and increments counter if finds one. Stops when it sees "#", or the end of line character. */
 		printf("You typed in %d words.\n", count);
 
 
-	fclose(pala);
+	fclose(pala); /* Closes file */
 
 return 0;
 }
